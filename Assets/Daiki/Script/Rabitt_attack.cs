@@ -11,10 +11,14 @@ public class Rabitt_attack : MonoBehaviour
     public float interval;
     public float move;
     private bool movef;
+    //public int[] attack = new int[60];
 
      // Start is called before the first frame update
      void Start()
      {
+        /*for(int i=0;i<60;i++){
+            attack[i]=Random.Range(0, 6);
+        }*/
      }
 
      // Update is called once per frame
@@ -29,6 +33,7 @@ public class Rabitt_attack : MonoBehaviour
             if(timer > interval)
             {
                 Attack();
+                Debug.Log("攻撃");
                 interval-=0.003f;
                 timer = 0.0f;
                 movef=false;

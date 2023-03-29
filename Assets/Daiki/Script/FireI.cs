@@ -16,6 +16,7 @@ public class FireI : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        GetComponent<Renderer>().material.color = Color.gray;
         this.gameObject.transform.parent = null;
         Attack();
         rb = GetComponent<Rigidbody2D>();
