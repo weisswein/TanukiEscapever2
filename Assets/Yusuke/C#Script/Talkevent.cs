@@ -11,7 +11,7 @@ public class Talkevent : MonoBehaviour
         [SerializeField] int finalturn;
         public static bool Talkable;
         GameObject objCanvas = null;
-
+        int i=0;
         void Start()
         {
            
@@ -20,6 +20,7 @@ public class Talkevent : MonoBehaviour
             charactersprite[0].SetActive(true);
             charactersprite[1].SetActive(true);
             charactersprite[2].SetActive(false);
+            charactersprite[3].SetActive(true);
             Talkable=true;
         }
 
@@ -40,7 +41,7 @@ public class Talkevent : MonoBehaviour
             objCanvas.SetActive(true);
 
 
-            for (int i = msgCaraName.GetLowerBound(0); i <= msgCaraName.GetUpperBound(0); i++)
+            for ( i = msgCaraName.GetLowerBound(0); i <= msgCaraName.GetUpperBound(0); i++)
             {
                 objCaraName.GetComponent<Text>().text = msgCaraName[i];
                 objContent.GetComponent<Text>().text = msgContent[i];
@@ -48,12 +49,14 @@ public class Talkevent : MonoBehaviour
                     charactersprite[0].SetActive(false);
                     charactersprite[1].SetActive(false);
                     charactersprite[2].SetActive(true);
+                    charactersprite[3].SetActive(false);
                 }
                 yield return new WaitUntil(() => Input.GetKeyDown(KeyCode.Space));
                 yield return null;
             }
+            i=0;
             objCanvas.SetActive(false);
             SceneManager.LoadScene("ScrollMapScene 1");
             
-}
+        }
 }
