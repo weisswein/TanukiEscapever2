@@ -29,7 +29,7 @@ public class Rabitt_attack : MonoBehaviour
             if(timer > interval)
             {
                 Attack();
-                interval-=0.01f;
+                interval-=0.003f;
                 timer = 0.0f;
                 movef=false;
             }
