@@ -18,8 +18,8 @@ public class MoveBackground : MonoBehaviour
     {
         Vector3 gb1=Gb1.anchoredPosition;
         Vector3 gb2=Gb2.anchoredPosition;
-        gb1 -= new Vector3(1,0,0);
-        gb2 -= new Vector3(1,0,0);
+        gb1 -= new Vector3(3,0,0);
+        gb2 -= new Vector3(3,0,0);
         if(Gb1.anchoredPosition.x<-912) gb1 = new Vector3(1060,0,0);
         if(Gb2.anchoredPosition.x<-912) gb2 = new Vector3(1060,0,0);
         Gb1.anchoredPosition=gb1;
