@@ -177,7 +177,6 @@ MonoBehaviour:
   - -0.65
   - 0.7
   setp_x: 1.39
-  dashTime: 0
   lane_num: 0
 --- !u!4 &16820478
 Transform:
@@ -577,7 +576,7 @@ EdgeCollider2D:
   m_Offset: {x: 0, y: 0}
   m_EdgeRadius: 0
   m_Points:
-  - {x: -4.5949364, y: 0.5504384}
+  - {x: -3.5141242, y: 0.9056433}
   - {x: 1.9562835, y: 2.8235023}
   m_AdjacentStartPoint: {x: 0, y: 0}
   m_AdjacentEndPoint: {x: 0, y: 0}
@@ -1048,7 +1047,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   rotate_speed: 1
   setp_x: 1.39
-  changeSE: {fileID: 8300000, guid: c4587ebbe1c79674a8e5d01de2ad6eec, type: 3}
+  changeSE: {fileID: 8300000, guid: 9a512e9ff856e42409169d7cc6cab3c8, type: 3}
   maxDistance: 3
 --- !u!212 &281330245
 SpriteRenderer:
@@ -1110,7 +1109,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 281330241}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 1.39, y: -1.5, z: 0}
+  m_LocalPosition: {x: 1.617, y: -1.5, z: 0}
   m_LocalScale: {x: 0.2858835, y: 0.2858835, z: 0.2858835}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1130,9 +1129,9 @@ CircleCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: -0.09222387}
+  m_Offset: {x: -0.04574186, y: -0.0007409834}
   serializedVersion: 2
-  m_Radius: 1.346107
+  m_Radius: 2.4591496
 --- !u!1 &349204255
 GameObject:
   m_ObjectHideFlags: 0
@@ -1205,7 +1204,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 3
   maxDistance: 20
-  getSE: {fileID: 8300000, guid: 69a511fb035924b4092d990d2dfa8518, type: 3}
+  getSE: {fileID: 8300000, guid: a3b9c97550b675448bf6b33257fe2f9a, type: 3}
   point: 5
 --- !u!212 &349204259
 SpriteRenderer:
@@ -1788,7 +1787,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   rotate_speed: 1
   setp_x: 1.39
-  changeSE: {fileID: 8300000, guid: c4587ebbe1c79674a8e5d01de2ad6eec, type: 3}
+  changeSE: {fileID: 8300000, guid: 9a512e9ff856e42409169d7cc6cab3c8, type: 3}
   maxDistance: 3
 --- !u!212 &674087993
 SpriteRenderer:
@@ -1857,8 +1856,8 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!61 &674087995
-BoxCollider2D:
+--- !u!58 &674087995
+CircleCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -1870,19 +1869,9 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.14597869, y: -1.5444471}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 8, y: 6}
-    newSize: {x: 8, y: 6}
-    adaptiveTilingThreshold: 0.5
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
+  m_Offset: {x: 0.097979136, y: -0.14696851}
   serializedVersion: 2
-  m_Size: {x: 3.3117094, y: 1.2601464}
-  m_EdgeRadius: 0
+  m_Radius: 1.5799191
 --- !u!1 &707232394
 GameObject:
   m_ObjectHideFlags: 0
@@ -2033,7 +2022,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 3
   maxDistance: 20
-  getSE: {fileID: 8300000, guid: 69a511fb035924b4092d990d2dfa8518, type: 3}
+  getSE: {fileID: 8300000, guid: 8bdef15aa5929d349a638a1bd6dc65c8, type: 3}
   point: 10
 --- !u!212 &785684987
 SpriteRenderer:
@@ -2415,7 +2404,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 3
   maxDistance: 20
-  getSE: {fileID: 8300000, guid: 69a511fb035924b4092d990d2dfa8518, type: 3}
+  getSE: {fileID: 8300000, guid: a3b9c97550b675448bf6b33257fe2f9a, type: 3}
   point: 1
 --- !u!50 &961188100
 Rigidbody2D:
@@ -3832,7 +3821,7 @@ MonoBehaviour:
   attackObj: {fileID: 1986075564}
   interval: 1
   move: 0.2
-  fireSE: {fileID: 8300000, guid: f63feb8c36f25724291fa2d26b94746f, type: 3}
+  fireSE: {fileID: 8300000, guid: f163ffa2dc8d3984ba8045494ad334e6, type: 3}
 --- !u!1 &1578473748
 GameObject:
   m_ObjectHideFlags: 0
@@ -4993,7 +4982,7 @@ EdgeCollider2D:
   m_Offset: {x: 0, y: 0}
   m_EdgeRadius: 0
   m_Points:
-  - {x: -4.5949364, y: 0.5504384}
+  - {x: -3.5141242, y: 0.9056433}
   - {x: 1.9562835, y: 2.8235023}
   m_AdjacentStartPoint: {x: 0, y: 0}
   m_AdjacentEndPoint: {x: 0, y: 0}

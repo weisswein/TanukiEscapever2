@@ -5,6 +5,7 @@ using UnityEngine;
 public class FireT : MonoBehaviour
 {
     [Header("最大移動距離")] public float maxDistance = 2.0f;
+    [Header("着弾SE")] public AudioClip fireSE;
     private Rigidbody2D rb;
     private Vector3 defaultPos;
     public float change=1.3f;
@@ -51,6 +52,7 @@ public class FireT : MonoBehaviour
     {
         if (collision.collider.tag == playerTag)
         {
+            GManager.instance.PlaySE(fireSE);
            Destroy(this.gameObject);
            if(!GManager.instance.hit&&!GManager.instance.disguiseR){
                 if(GManager.instance.currentHp<1){

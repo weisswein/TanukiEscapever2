@@ -6,6 +6,7 @@ public class FireI : MonoBehaviour
 {
     public GameObject attackObj;
     [Header("最大移動距離")] public float maxDistance = 2.0f;
+    [Header("着弾SE")] public AudioClip fireSE;
     private Rigidbody2D rb;
     private Vector3 defaultPos;
     public float change=1.3f;

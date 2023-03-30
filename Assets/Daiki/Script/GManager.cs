@@ -11,7 +11,7 @@
     public bool GameStart = false;
     public int syamozi = 0;//点数
     public bool hit=false;
-    public bool dash=false;
+    public int dash=0;
     public bool disguiseR=false;
     public bool cool=false;
     public bool end=false;//終わりの判定
@@ -19,7 +19,6 @@
     public float[] setp_ye;
     public float[] setp_yf;
     public float setp_x;
-    public float dashTime;
     public int lane_num;
     private AudioSource audioSource = null;
     private void Awake()
