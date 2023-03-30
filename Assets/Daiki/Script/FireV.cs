@@ -17,6 +17,7 @@ public class FireV : MonoBehaviour
     void Start()
     {
         this.gameObject.transform.parent = null;
+        GetComponent<Renderer>().material.color = new Color32(54, 219, 226, 255);
         rb = GetComponent<Rigidbody2D>();
         sr = GetComponent<SpriteRenderer>();
         if (rb == null)

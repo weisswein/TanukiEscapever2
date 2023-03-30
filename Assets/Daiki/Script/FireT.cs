@@ -15,7 +15,7 @@ public class FireT : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        GetComponent<Renderer>().material.color = new Color32(255, 90, 90, 255);
+        GetComponent<Renderer>().material.color = new Color32(0, 231, 85, 255);
         this.gameObject.transform.parent = null;
         rb = GetComponent<Rigidbody2D>();
         if (rb == null)

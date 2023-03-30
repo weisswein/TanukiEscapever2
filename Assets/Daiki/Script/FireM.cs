@@ -15,7 +15,7 @@ public class FireM : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        GetComponent<Renderer>().material.color = Color.green;
+        GetComponent<Renderer>().material.color = new Color32(224, 82, 40, 255);
         this.gameObject.transform.parent = null;
         rb = GetComponent<Rigidbody2D>();
         if (rb == null)
