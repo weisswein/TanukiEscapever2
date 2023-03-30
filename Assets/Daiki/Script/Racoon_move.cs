@@ -30,6 +30,7 @@ public class Racoon_move : MonoBehaviour
     void OnEnable(){
         //切り替わったときに
         Vector3 posi = this.transform.position;
+        GetComponent<Renderer>().material.color = Color.white;
         //現在位置が基準位置より左なら初期化
         if(posi.x<=setp_x){
             GManager.instance.dash=false;
