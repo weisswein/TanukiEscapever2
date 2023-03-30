@@ -617,6 +617,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   attackObj: {fileID: 0}
   maxDistance: 20
+  fireSE: {fileID: 0}
   change: 1.3
 --- !u!114 &102906056
 MonoBehaviour:
@@ -631,6 +632,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   maxDistance: 20
+  fireSE: {fileID: 0}
   change: 1.3
 --- !u!114 &102906057
 MonoBehaviour:
@@ -645,6 +647,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   maxDistance: 20
+  fireSE: {fileID: 0}
   change: 1.3
 --- !u!114 &102906058
 MonoBehaviour:
@@ -659,6 +662,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   maxDistance: 20
+  fireSE: {fileID: 0}
   change: 1.3
 --- !u!114 &102906059
 MonoBehaviour:
@@ -673,6 +677,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   maxDistance: 20
+  fireSE: {fileID: 0}
 --- !u!212 &102906060
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -1430,7 +1435,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 0}
+  m_audioClip: {fileID: 8300000, guid: 17c20cb815bd21349a032983644c58e5, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 0.114
   m_Pitch: 1
@@ -2920,6 +2925,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   attackObj: {fileID: 0}
   maxDistance: 20
+  fireSE: {fileID: 0}
   change: 1.3
 --- !u!114 &1219670980
 MonoBehaviour:
@@ -2934,6 +2940,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   maxDistance: 20
+  fireSE: {fileID: 0}
   change: 1.3
 --- !u!114 &1219670981
 MonoBehaviour:
@@ -2948,6 +2955,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   maxDistance: 20
+  fireSE: {fileID: 0}
   change: 1.3
 --- !u!114 &1219670982
 MonoBehaviour:
@@ -2962,6 +2970,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   maxDistance: 20
+  fireSE: {fileID: 0}
   change: 1.3
 --- !u!114 &1219670983
 MonoBehaviour:
@@ -2976,6 +2985,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   maxDistance: 20
+  fireSE: {fileID: 0}
 --- !u!212 &1219670984
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -3718,6 +3728,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   playerObj1: {fileID: 281330241}
   playerObj2: {fileID: 674087989}
+  changeSE: {fileID: 0}
 --- !u!1 &1482610150
 GameObject:
   m_ObjectHideFlags: 0
@@ -4560,7 +4571,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   second: 0
-  BGM: {fileID: 8300000, guid: cbe5541df5fb2054fab6816357eb2eb9, type: 3}
+  BGM: {fileID: 0}
 --- !u!114 &1878756916
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4843,6 +4854,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   attackObj: {fileID: 102906052}
   maxDistance: 20
+  fireSE: {fileID: 0}
   change: 1.3
 --- !u!114 &1986075568
 MonoBehaviour:
@@ -4857,6 +4869,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   maxDistance: 20
+  fireSE: {fileID: 0}
   change: 1.3
 --- !u!114 &1986075569
 MonoBehaviour:
@@ -4871,6 +4884,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   maxDistance: 20
+  fireSE: {fileID: 0}
   change: 1.3
 --- !u!114 &1986075570
 MonoBehaviour:
@@ -4885,6 +4899,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   maxDistance: 20
+  fireSE: {fileID: 0}
   change: 1.3
 --- !u!114 &1986075571
 MonoBehaviour:
@@ -4899,6 +4914,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   maxDistance: 20
+  fireSE: {fileID: 0}
 --- !u!212 &1986075572
 SpriteRenderer:
   m_ObjectHideFlags: 0
