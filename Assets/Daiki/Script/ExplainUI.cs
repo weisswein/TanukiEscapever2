@@ -11,6 +11,8 @@ public class ExplainUI : MonoBehaviour
     public GameObject ex4;
     public GameObject ex5;
     private int change=1;
+    public AudioSource As_description;
+    public AudioClip Ac_description;
     // Start is called before the first frame update
     void Start () {
     }
@@ -63,6 +65,7 @@ public class ExplainUI : MonoBehaviour
         ex.SetActive(false);
     }
     public void open(){
+        As_description.PlayOneShot(Ac_description);
         ex1.SetActive(true);
         ex2.SetActive(false);
         ex3.SetActive(false);
