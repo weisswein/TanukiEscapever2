@@ -21,22 +21,38 @@
     public float setp_x;
     public float dashTime;
     public int lane_num;
-     private void Awake()
-     {
-       
+    private AudioSource audioSource = null;
+    private void Awake()
+    {
+      
 
-         if(instance == null)
-         {
-             instance = this;
-             DontDestroyOnLoad(this.gameObject); 
-         }
-         else
-         {
-             Destroy(this.gameObject);
-         }
-       
-     }
-     public void destroymethod(){
-         Destroy(this.gameObject);
-     }
- }
+        if(instance == null)
+        {
+            instance = this;
+            DontDestroyOnLoad(this.gameObject); 
+        }
+        else
+        {
+            Destroy(this.gameObject);
+        }
+      
+    }
+    public void destroymethod(){
+        Destroy(this.gameObject);
+    }
+    private void Start()
+    {
+        audioSource = GetComponent<AudioSource>();
+    }
+    public void PlaySE(AudioClip clip)
+    {
+        if (audioSource != null)
+        {
+            audioSource.PlayOneShot(clip);
+        }
+        else
+        {
+            Debug.Log("オーディオソースが設定されていません");
+        }
+    }
+}
