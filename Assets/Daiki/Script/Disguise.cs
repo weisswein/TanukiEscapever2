@@ -15,7 +15,7 @@ public class Disguise : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKey (KeyCode.LeftArrow)&&(!GManager.instance.disguiseR)&&(GManager.instance.cool)) {
+        if ((Input.GetKey (KeyCode.Space)||Input.GetKey (KeyCode.LeftArrow))&&(!GManager.instance.disguiseR)&&(GManager.instance.cool)) {
             Debug.Log("変化");
             playerObj1.SetActive(false);
             playerObj2.SetActive(true);

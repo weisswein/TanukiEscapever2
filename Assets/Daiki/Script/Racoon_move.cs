@@ -7,7 +7,7 @@ public class Racoon_move : MonoBehaviour
     public float rotate_speed;//回転速度
     public float setp_x;//初期のx座標
     private bool push_flag;//キーを推したかどうか
-    public AnimationCurve dashCurve;//速度変位
+    //public AnimationCurve dashCurve;//速度変位
     private bool change=false;//色が変わっているかどうか
     private float hitTime;//ダメージ演出用のタイマー
     private int hitcount=0; //色の切り替え回数
@@ -51,7 +51,8 @@ public class Racoon_move : MonoBehaviour
 
         //回転
         Transform myTransform = this.transform;
-        myTransform.Rotate(0,0,-1.0f*(rotate_speed+xspeed*3),Space.World);
+        if(xspeed>0)myTransform.Rotate(0,0,-1.0f*(rotate_speed+xspeed*0.2f),Space.World);
+        else    myTransform.Rotate(0,0,-1.0f*(rotate_speed+xspeed*0.02f),Space.World);
         Vector3 posi = this.transform.position;
 
         //スピードが0なら初期位置と記録
@@ -86,7 +87,7 @@ public class Racoon_move : MonoBehaviour
             if(!GManager.instance.dash){
                 GManager.instance.dash=true;
                 defaultPos = transform.position;
-                xspeed=0.0f;
+                xspeed=7f;
                 GManager.instance.dashTime=0.0f;
             }      
         }
@@ -94,20 +95,20 @@ public class Racoon_move : MonoBehaviour
 
         //ダッシュ状態のとき
         if(GManager.instance.dash){ 
-            GManager.instance.dashTime += Time.deltaTime*1.2f;
-            xspeed += dashCurve.Evaluate(GManager.instance.dashTime);
+            GManager.instance.dashTime += Time.deltaTime*1.2f; 
+            transform.position += new Vector3(xspeed*Time.deltaTime, 0 ,0);
             if(posi.x<setp_x&&xspeed<0){
                 GManager.instance.dash=false;
-                xspeed=0.0f;
                 GManager.instance.dashTime=0.0f;
-                transform.position = new Vector3(setp_x, GManager.instance.setp_y[GManager.instance.lane_num] ,0);
+                rb.velocity = new Vector2(0,0);
             }
         }
 
         //もしも右端に行ったら強制的に左に戻す
-        if(posi.x>=9.05){
-            xspeed=-1f;
+        if(posi.x>=6){
+            xspeed=-4.6f;
             GManager.instance.dash=true;
+            transform.position += new Vector3(xspeed*Time.deltaTime, 0 ,0);
         }
         //初期位置より左なら初期化
         else if(posi.x<setp_x){
@@ -116,7 +117,7 @@ public class Racoon_move : MonoBehaviour
             GManager.instance.dashTime=0.0f;
             transform.position = new Vector3(setp_x, GManager.instance.setp_y[GManager.instance.lane_num] ,0);
         }
-        transform.Translate (xspeed*0.14f, 0, 0,Space.World);
+        //transform.Translate (xspeed*Time.deltaTime, 0, 0,Space.World);
 
         //攻撃が当たったとき
         if(GManager.instance.hit){
