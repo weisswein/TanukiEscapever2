@@ -10,7 +10,8 @@ public class Scoredisplay : MonoBehaviour
     void Start()
     {
         Gmg = GameObject.Find("GManager").GetComponent<GManager>();
-        tx.text="Score: "+Gmg.syamozi+" “_!";
+        tx.text="Score: "+Gmg.syamozi*Gmg.currentHp*10+" “_!";
+        Debug.Log("syamozi"+Gmg.syamozi+"HP"+Gmg.currentHp);
     }
 
     
