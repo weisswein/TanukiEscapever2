@@ -5,7 +5,15 @@ using UnityEngine.SceneManagement;
 
 public class Nextscorescene : MonoBehaviour
 {
+	public AudioSource Aus_skip;
+	public AudioClip Ac_skipscore;
+
    public void NextScoreSceneButton(){
-	SceneManager.LoadScene("GameClear");
+	Aus_skip.PlayOneShot(Ac_skipscore);
+	Invoke("NextScoreSceneSkipTransition",2);
+   }
+   private void NextScoreSceneSkipTransition()
+   {
+		 SceneManager.LoadScene("GameClear");
    }
 }
