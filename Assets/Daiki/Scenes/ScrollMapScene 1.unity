@@ -1048,30 +1048,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   rotate_speed: 1
   setp_x: 1.39
-  dashCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: -0.004432678
-      value: 0.00047302246
-      inSlope: 0.0054716878
-      outSlope: 0.0054716878
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0
-      outWeight: 0.06686448
-    - serializedVersion: 3
-      time: 1.6635692
-      value: -0.0040414967
-      inSlope: 0.010260693
-      outSlope: 0.010260693
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.12115921
-      outWeight: 0.33333334
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
   changeSE: {fileID: 8300000, guid: c4587ebbe1c79674a8e5d01de2ad6eec, type: 3}
   maxDistance: 3
 --- !u!212 &281330245
@@ -1812,30 +1788,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   rotate_speed: 1
   setp_x: 1.39
-  dashCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: -0.004432678
-      value: 0.00047302246
-      inSlope: 0.0054716878
-      outSlope: 0.0054716878
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0
-      outWeight: 0.06686448
-    - serializedVersion: 3
-      time: 1.6635692
-      value: -0.0040414967
-      inSlope: 0.010260693
-      outSlope: 0.010260693
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.12115921
-      outWeight: 0.33333334
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
   changeSE: {fileID: 8300000, guid: c4587ebbe1c79674a8e5d01de2ad6eec, type: 3}
   maxDistance: 3
 --- !u!212 &674087993
@@ -4619,7 +4571,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   second: 0
-  BGM: {fileID: 8300000, guid: b439acd557c555b4ab6a65c0862b274c, type: 3}
+  BGM: {fileID: 0}
 --- !u!114 &1878756916
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4674,7 +4626,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 0}
   m_PlayOnAwake: 0
-  m_Volume: 1
+  m_Volume: 0.123
   m_Pitch: 1
   Loop: 0
   Mute: 0
