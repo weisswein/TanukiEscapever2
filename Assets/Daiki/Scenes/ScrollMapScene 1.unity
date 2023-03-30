@@ -547,10 +547,6 @@ GameObject:
   - component: {fileID: 102906061}
   - component: {fileID: 102906060}
   - component: {fileID: 102906059}
-  - component: {fileID: 102906058}
-  - component: {fileID: 102906057}
-  - component: {fileID: 102906056}
-  - component: {fileID: 102906055}
   - component: {fileID: 102906054}
   - component: {fileID: 102906053}
   m_Layer: 7
@@ -603,6 +599,7 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 4
+<<<<<<< HEAD
 --- !u!114 &102906055
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -664,6 +661,8 @@ MonoBehaviour:
   maxDistance: 20
   fireSE: {fileID: 0}
   change: 1.3
+=======
+>>>>>>> a490afab8b205f1ef550ad4c6cbb21f0618b02d2
 --- !u!114 &102906059
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -677,7 +676,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   maxDistance: 20
+<<<<<<< HEAD
   fireSE: {fileID: 0}
+=======
+  fireSE: {fileID: 8300000, guid: bde8072816d2cab4db481c9676416b30, type: 3}
+>>>>>>> a490afab8b205f1ef550ad4c6cbb21f0618b02d2
 --- !u!212 &102906060
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -1037,7 +1040,7 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 0
+  m_Constraints: 2
 --- !u!114 &281330244
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1178,7 +1181,7 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 4
+  m_Constraints: 6
 --- !u!58 &349204257
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -1777,7 +1780,7 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 0
+  m_Constraints: 2
 --- !u!114 &674087992
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1996,7 +1999,7 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 4
+  m_Constraints: 6
 --- !u!58 &785684985
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -2431,7 +2434,7 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 4
+  m_Constraints: 6
 --- !u!58 &961188101
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -2866,6 +2869,7 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+<<<<<<< HEAD
 --- !u!1 &1219670976
 GameObject:
   m_ObjectHideFlags: 0
@@ -3069,6 +3073,8 @@ CircleCollider2D:
   m_Offset: {x: -2.6833045, y: 0.706025}
   serializedVersion: 2
   m_Radius: 1.7524165
+=======
+>>>>>>> a490afab8b205f1ef550ad4c6cbb21f0618b02d2
 --- !u!1 &1240033435
 GameObject:
   m_ObjectHideFlags: 0
@@ -3728,7 +3734,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   playerObj1: {fileID: 281330241}
   playerObj2: {fileID: 674087989}
+<<<<<<< HEAD
   changeSE: {fileID: 0}
+=======
+  changeSE: {fileID: 8300000, guid: 20a8f81f22a4cc54bb36e8351dee0eb7, type: 3}
+>>>>>>> a490afab8b205f1ef550ad4c6cbb21f0618b02d2
 --- !u!1 &1482610150
 GameObject:
   m_ObjectHideFlags: 0
@@ -3813,7 +3823,6 @@ Transform:
   m_Children:
   - {fileID: 1986075573}
   - {fileID: 102906061}
-  - {fileID: 1219670985}
   m_Father: {fileID: 0}
   m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 12.674}
@@ -4757,7 +4766,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   attackObj: {fileID: 102906052}
   maxDistance: 20
+<<<<<<< HEAD
   fireSE: {fileID: 0}
+=======
+  fireSE: {fileID: 8300000, guid: bde8072816d2cab4db481c9676416b30, type: 3}
+>>>>>>> a490afab8b205f1ef550ad4c6cbb21f0618b02d2
   change: 1.3
 --- !u!114 &1986075568
 MonoBehaviour:
@@ -4772,7 +4785,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   maxDistance: 20
+<<<<<<< HEAD
   fireSE: {fileID: 0}
+=======
+  fireSE: {fileID: 8300000, guid: bde8072816d2cab4db481c9676416b30, type: 3}
+>>>>>>> a490afab8b205f1ef550ad4c6cbb21f0618b02d2
   change: 1.3
 --- !u!114 &1986075569
 MonoBehaviour:
@@ -4787,7 +4804,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   maxDistance: 20
+<<<<<<< HEAD
   fireSE: {fileID: 0}
+=======
+  fireSE: {fileID: 8300000, guid: bde8072816d2cab4db481c9676416b30, type: 3}
+>>>>>>> a490afab8b205f1ef550ad4c6cbb21f0618b02d2
   change: 1.3
 --- !u!114 &1986075570
 MonoBehaviour:
@@ -4802,7 +4823,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   maxDistance: 20
+<<<<<<< HEAD
   fireSE: {fileID: 0}
+=======
+  fireSE: {fileID: 8300000, guid: bde8072816d2cab4db481c9676416b30, type: 3}
+>>>>>>> a490afab8b205f1ef550ad4c6cbb21f0618b02d2
   change: 1.3
 --- !u!114 &1986075571
 MonoBehaviour:
@@ -4817,7 +4842,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   maxDistance: 20
+<<<<<<< HEAD
   fireSE: {fileID: 0}
+=======
+  fireSE: {fileID: 8300000, guid: bde8072816d2cab4db481c9676416b30, type: 3}
+>>>>>>> a490afab8b205f1ef550ad4c6cbb21f0618b02d2
 --- !u!212 &1986075572
 SpriteRenderer:
   m_ObjectHideFlags: 0
