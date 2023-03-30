@@ -6,6 +6,7 @@ public class Disguise : MonoBehaviour
 {
     [Header("プレイヤーオブジェクト")] public GameObject playerObj1;
     [Header("プレイヤーオブジェクト")] public GameObject playerObj2;
+    [Header("変化SE")] public AudioClip changeSE;
     // Start is called before the first frame update
     void Start()
     {
@@ -17,6 +18,7 @@ public class Disguise : MonoBehaviour
     {
         if ((Input.GetKey (KeyCode.Space)||Input.GetKey (KeyCode.LeftArrow))&&(!GManager.instance.disguiseR)&&(GManager.instance.cool)) {
             Debug.Log("変化");
+            GManager.instance.PlaySE(changeSE);
             playerObj1.SetActive(false);
             playerObj2.SetActive(true);
             GManager.instance.disguiseR=true;
