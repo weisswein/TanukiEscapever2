@@ -15,6 +15,9 @@ EditorBuildSettings:
     path: Assets/Daiki/Scenes/ScrollMapScene 1.unity
     guid: afb1172bee06aa5468c791e7712e6f9e
   - enabled: 1
+    path: Assets/Yusuke/Scene/Story_GameClear.unity
+    guid: 19d31b6bce08af048a056698cb44173c
+  - enabled: 1
     path: Assets/Yusuke/Scene/GameClear.unity
     guid: 2c8496b8a20717949b2b88db7a26208e
   - enabled: 1
