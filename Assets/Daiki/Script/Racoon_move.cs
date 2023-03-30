@@ -14,6 +14,7 @@ public class Racoon_move : MonoBehaviour
     private float xspeed=0.0f; //キャラのx軸の速さ
     private Rigidbody2D rb;
     private Vector3 defaultPos;
+    [Header("レーン替えSE")] public AudioClip changeSE;
     [Header("最大移動距離")] public float maxDistance = 2.0f;
     // Start is called before the first frame update
     void Start()
@@ -63,6 +64,7 @@ public class Racoon_move : MonoBehaviour
             if((!push_flag)&&(GManager.instance.lane_num<2)){
                 GManager.instance.lane_num+=1;
                 transform.position = new Vector3(GManager.instance.setp_x, GManager.instance.setp_y[GManager.instance.lane_num] ,0);
+                GManager.instance.PlaySE(changeSE);
                 push_flag=true;
             }
             
@@ -73,6 +75,7 @@ public class Racoon_move : MonoBehaviour
             if((!push_flag)&&(GManager.instance.lane_num>0)){
                 GManager.instance.lane_num-=1;
                 transform.position = new Vector3(GManager.instance.setp_x, GManager.instance.setp_y[GManager.instance.lane_num] ,0);
+                GManager.instance.PlaySE(changeSE);
                 push_flag=true;
             }
             
