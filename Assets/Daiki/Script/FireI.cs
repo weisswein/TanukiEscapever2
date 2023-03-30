@@ -41,8 +41,7 @@ public class FireI : MonoBehaviour
         }
         else
         {
-            rb.MovePosition(transform.position -= transform.up * Time.deltaTime * GManager.instance.speed*0.35f);
-            rb.MovePosition(transform.position += transform.right * Time.deltaTime *GManager.instance.speed);
+            transform.position += new Vector3(Time.deltaTime *GManager.instance.speed*1.06f, 0 ,0);
         }
         if ((d > change)&&!move){ 
             int ran=Random.Range(0, 3);
@@ -64,6 +63,7 @@ public class FireI : MonoBehaviour
                 //現在のHPからダメージを引く
                 GManager.instance.currentHp -= 1;
                 GManager.instance.hit=true;
+                GManager.instance.PlaySE(fireSE);
            }
         }
     }

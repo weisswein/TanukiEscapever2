@@ -39,8 +39,7 @@ public class FireT : MonoBehaviour
         }
         else
         {
-            rb.MovePosition(transform.position -= transform.up * Time.deltaTime * GManager.instance.speed*0.35f);
-            rb.MovePosition(transform.position += transform.right * Time.deltaTime *GManager.instance.speed);
+            transform.position += new Vector3(Time.deltaTime *GManager.instance.speed*1.06f, 0 ,0);
         }
         if ((d > change)&&!move){ 
             Vector3 posi = this.transform.position;
@@ -52,7 +51,6 @@ public class FireT : MonoBehaviour
     {
         if (collision.collider.tag == playerTag)
         {
-            GManager.instance.PlaySE(fireSE);
            Destroy(this.gameObject);
            if(!GManager.instance.hit&&!GManager.instance.disguiseR){
                 if(GManager.instance.currentHp<1){
@@ -61,6 +59,7 @@ public class FireT : MonoBehaviour
                 //現在のHPからダメージを引く
                 GManager.instance.currentHp -= 1;
                 GManager.instance.hit=true;
+                GManager.instance.PlaySE(fireSE);
            }
         }
     }
