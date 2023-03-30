@@ -11,11 +11,14 @@ public class Timer : MonoBehaviour
     private DateTime startTime;
     private Text timeText;
     public double second = 0;
+    private AudioSource audioSource = null; 
+     public AudioClip BGM; 
 
 
     private void Start()
     {
         timeText = GetComponent<Text>();
+        audioSource = GetComponent<AudioSource>();
         timer = 0;
     }
 
@@ -33,6 +36,7 @@ public class Timer : MonoBehaviour
                 GManager.instance.GameStart=true;
                 timer=0f;
                 startTime = System.DateTime.Now;
+                audioSource.PlayOneShot(BGM);
                 Debug.Log("START!");
             }
             else{
