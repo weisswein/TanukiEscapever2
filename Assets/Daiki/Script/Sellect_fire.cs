@@ -11,6 +11,7 @@ public class Sellect_fire : MonoBehaviour
         switch(ran){
             case 0:
                 GetComponent<Fire>().enabled = true;
+                GetComponent<Renderer>().material.color = new Color32(224, 186, 40, 255);
                 break;
             case 1:
                 GetComponent<FireM>().enabled = true;
@@ -26,6 +27,7 @@ public class Sellect_fire : MonoBehaviour
                 break;
             case 5:
                 GetComponent<Fire>().enabled = true;
+                GetComponent<Renderer>().material.color = new Color32(224, 186, 40, 255);
                 break;
             default:
                 break;
