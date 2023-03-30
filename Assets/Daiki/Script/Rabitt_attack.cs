@@ -11,6 +11,7 @@ public class Rabitt_attack : MonoBehaviour
     public float interval;
     public float move;
     private bool movef;
+    [Header("炎SE")] public AudioClip fireSE;
     //public int[] attack = new int[60];
 
      // Start is called before the first frame update
@@ -33,6 +34,7 @@ public class Rabitt_attack : MonoBehaviour
             if(timer > interval)
             {
                 Attack();
+                GManager.instance.PlaySE(fireSE);
                 Debug.Log("攻撃");
                 interval-=0.003f;
                 timer = 0.0f;
