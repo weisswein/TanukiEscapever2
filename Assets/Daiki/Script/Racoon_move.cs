@@ -33,9 +33,8 @@ public class Racoon_move : MonoBehaviour
         GetComponent<Renderer>().material.color = Color.white;
         //現在位置が基準位置より左なら初期化
         if(posi.x<=setp_x){
-            GManager.instance.dash=false;
+            GManager.instance.dash=0;
             xspeed=0.0f;
-            GManager.instance.dashTime=0.0f;
             transform.position = new Vector3(setp_x, GManager.instance.setp_y[GManager.instance.lane_num] ,0);
         }
         //違うなら元の位置を引き継ぐ
@@ -85,22 +84,21 @@ public class Racoon_move : MonoBehaviour
         //右を押したら
         else if (Input.GetKey (KeyCode.RightArrow)) {
             //ダッシュ状態に切り替え+念のために初期化
-            if(!GManager.instance.dash){
-                GManager.instance.dash=true;
+            if(GManager.instance.dash==0){
+                GManager.instance.dash=1;
                 defaultPos = transform.position;
                 xspeed=7f;
-                GManager.instance.dashTime=0.0f;
             }      
         }
         else push_flag=false;
 
         //ダッシュ状態のとき
-        if(GManager.instance.dash){ 
-            GManager.instance.dashTime += Time.deltaTime*1.2f; 
+        if(GManager.instance.dash!=0){ 
             transform.position += new Vector3(xspeed*Time.deltaTime, 0 ,0);
+            if(GManager.instance.dash==1)xspeed=7f;
+            else xspeed=-4.6f;
             if(posi.x<setp_x&&xspeed<0){
-                GManager.instance.dash=false;
-                GManager.instance.dashTime=0.0f;
+                GManager.instance.dash=0;
                 rb.velocity = new Vector2(0,0);
             }
         }
@@ -108,14 +106,13 @@ public class Racoon_move : MonoBehaviour
         //もしも右端に行ったら強制的に左に戻す
         if(posi.x>=6){
             xspeed=-4.6f;
-            GManager.instance.dash=true;
+            GManager.instance.dash=-1;
             transform.position += new Vector3(xspeed*Time.deltaTime, 0 ,0);
         }
         //初期位置より左なら初期化
         else if(posi.x<setp_x){
-            GManager.instance.dash=false;
+            GManager.instance.dash=0;
             xspeed=0.0f;
-            GManager.instance.dashTime=0.0f;
             transform.position = new Vector3(setp_x, GManager.instance.setp_y[GManager.instance.lane_num] ,0);
         }
         //transform.Translate (xspeed*Time.deltaTime, 0, 0,Space.World);
