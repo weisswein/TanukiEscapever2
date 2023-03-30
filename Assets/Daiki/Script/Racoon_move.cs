@@ -51,8 +51,8 @@ public class Racoon_move : MonoBehaviour
 
         //回転
         Transform myTransform = this.transform;
-        if(xspeed>0)myTransform.Rotate(0,0,-1.0f*(rotate_speed+xspeed*0.2f),Space.World);
-        else    myTransform.Rotate(0,0,-1.0f*(rotate_speed+xspeed*0.02f),Space.World);
+        if(xspeed>=0)gameObject.transform.Rotate(new Vector3(0, 0, -(rotate_speed+xspeed*0.2f)*300) * Time.deltaTime);
+        else    gameObject.transform.Rotate(new Vector3(0, 0, -(rotate_speed+xspeed*0.02f)*300) * Time.deltaTime);
         Vector3 posi = this.transform.position;
 
         //スピードが0なら初期位置と記録
